@@ -1,0 +1,16 @@
+{
+  "title": "Oliver Byford",
+  "url": "https://obyford.com",
+  "description": "Sometimes I write things down. This is where you can read those things.",
+  "feed": {
+    "subtitle": "Sometimes I write things down. This is where you can read those things.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://obyford.com/feed/feed.xml",
+    "id": "https://obyford.com/"
+  },
+  "author": {
+    "name": "Oliver Byford",
+    "email": "o@byford.org"
+  }
+}

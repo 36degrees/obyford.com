@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "description": "My personal site, generated using Eleventy",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/36degress/personal-site.git"
+  },
+  "author": {
+    "name": "Oliver Byford",
+    "email": "o@byford.org"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.3",
+    "luxon": "^1.0.0",
+    "markdown-it": "^8.4.1",
+    "markdown-it-anchor": "^5.0.2"
+  },
+  "dependencies": {
+    "standard": "^12.0.1"
+  }
+}

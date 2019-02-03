@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  </head>
+  <body>
+
+    {% if page.url !== "/" %}
+    <nav class="nav">
+      <a href="{{ '/' | url }}" class="link"><span aria-hidden="true">←</span> Home</a>
+    </nav>
+    {% endif %}
+
+    <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      {{ content | safe }}
+    </main>
+
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__list-item"><a class="link link--muted" href="https://github.com/36degrees">GitHub</a></li>
+        <li class="footer__list-item"><a class="link link--muted" href="https://twitter.com/36degrees">Twitter</a></li>
+        <li class="footer__list-item"><a class="link link--muted" href="https://www.instagram.com/thirty6degrees/">Instagram</a></li>
+        <li class="footer__list-item"><a class="link link--muted" href="https://last.fm/user/thirty6degrees">last.fm</a></li>
+      </ul>
+    </footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>

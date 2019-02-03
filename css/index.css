@@ -1,0 +1,199 @@
+:root {
+  --accent: #BB4430;
+  --accentdark: #772b1f;
+  --accentlight: #dc8475;
+
+  --lightgrey: #E8E4E1;
+  --darkgrey: #5B5A5B;
+ 
+  --focus: #93A3B1;
+  --white: #FFFBF7;
+  --black: #231F20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--black);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  border-top: 0.5rem solid var(--accent);
+}
+
+body {
+  max-width: 50em;
+  margin: auto;
+}
+
+main {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.nav {
+  margin: 1.5rem 2rem;
+}
+
+/* Paragraphs, Headings */
+
+.paragraph,
+.prose p,
+.prose li {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.paragraph--lead,
+.prose .paragraph--lead {
+  font-size: 1.5rem;
+}
+
+.paragraph--inverse,
+.heading--inverse {
+  color: var(--white);
+}
+
+.prose h1 {
+  font-size: 3rem;
+  max-width: 12.5em;
+}
+
+/* Links */
+
+.link:link,
+.link:visited,
+.prose a[href]:link,
+.prose a[href]:visited {
+  color: var(--accent);
+  text-decoration-color: var(--accentlight);
+}
+
+.link:hover,
+.link:active,
+.prose a[href]:hover,
+.prose a[href]:active {
+  color: var(--accentdark);
+  text-decoration-color: inherit;
+}
+
+.link:focus,
+.prose a[href]:focus {
+  background-color: var(--black);
+  outline: 5px solid var(--black);
+  color: var(--white);
+  text-decoration-color: inherit;
+}
+
+.link--muted:link,
+.link--muted:visited {
+  color: var(--darkgrey);
+  text-decoration-color: inherit;
+}
+
+.link--muted:focus {
+  color: var(--white);
+}
+
+.link--inverse:link,
+.link--inverse:visited,
+.link--inverse:hover,
+.link--inverse:active {
+  color: var(--white);
+}
+
+/* Images */
+
+.prose img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Footer */
+
+.footer {
+  padding: 2rem 2rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--lightgrey);
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.footer__list-item {
+  padding: 0;
+  display: inline-block;
+}
+
+.footer__list-item + .footer__list-item {
+  margin-left: 2rem;
+}
+
+.footer__link:link,
+.footer__link:visited {
+  color: var(--darkgrey);
+}
+
+/* Hero */
+
+.hero {
+  background-color: var(--accent);
+  border-bottom: 0.25rem solid var(--accentdark);
+  padding: 2rem;
+  margin: 0 -2rem 3rem -2rem;
+}
+
+/* Posts list */
+
+.postlist {
+  list-style: none;
+  padding: 0;
+}
+.postlist__item {
+  counter-increment: start-from -1;
+  margin-bottom: 1rem;
+}
+.postlist__date,
+.postlist__item:before {
+  color: var(--darkgrey);
+}
+.postlist__date {
+  word-spacing: -0.5px;
+}
+.postlist__link {
+  display: inline-block;
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+/* Direct Links / Markdown Headers */
+.direct-link {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  margin-left: .1em;
+}
+.prose a[href].direct-link,
+.prose a[href].direct-link:visited {
+  color: transparent;
+}
+.prose a[href].direct-link:focus,
+.prose a[href].direct-link:focus:visited,
+.prose :hover > a[href].direct-link,
+.prose :hover > a[href].direct-link:visited {
+  color: var(--accent);
+}
+
