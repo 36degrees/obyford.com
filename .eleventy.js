@@ -1,13 +1,14 @@
 const { DateTime } = require("luxon")
 const fs = require("fs")
-const pluginRss = require("@11ty/eleventy-plugin-rss")
 
 module.exports = function(config) {
-  config.addPlugin(pluginRss)
+  config.addPlugin(require("@11ty/eleventy-plugin-rss"))
   config.setDataDeepMerge(true)
 
   config.addLayoutAlias("base", "layouts/base.njk")
   config.addLayoutAlias("post", "layouts/post.njk")
+
+  /* Filters */
 
   config.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy")
@@ -30,24 +31,25 @@ module.exports = function(config) {
   config.addPassthroughCopy("img")
   config.addPassthroughCopy("css")
 
-  /* Markdown Plugins */
-  let markdownIt = require("markdown-it")
-  let markdownItAnchor = require("markdown-it-anchor")
-  let options = {
+  /* Markdown */
+
+  const markdownOptions = {
     html: true,
-    breaks: true,
     linkify: true,
     typographer: true
   }
-  let opts = {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#"
-  }
 
-  config.setLibrary("md", markdownIt(options)
-    .use(markdownItAnchor, opts)
-  )
+  const markdown = require("markdown-it")(markdownOptions)
+    .use(require("markdown-it-anchor"), {
+      permalink: true,
+      permalinkClass: "direct-link",
+      permalinkSymbol: "#"
+    })
+    .use(require('markdown-it-attrs'))
+
+  config.setLibrary("md", markdown)
+
+  /* BrowserSync */
 
   config.setBrowserSyncConfig({
     callbacks: {
