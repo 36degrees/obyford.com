@@ -6,7 +6,7 @@
   --lightgrey: #E8E4E1;
   --darkgrey: #5B5A5B;
  
-  --focus: #93A3B1;
+  --focus: #feeabf;
   --white: #FFFBF7;
   --black: #231F20;
 }
@@ -37,6 +37,11 @@ body {
 main {
   padding: 2rem;
   margin-top: 3rem;
+}
+
+::selection {
+  background-color: var(--focus);
+  color: var(--black);
 }
 
 .nav {
@@ -118,6 +123,12 @@ main {
   height: auto;
 }
 
+/* Dates */
+.date {
+  color: var(--darkgrey);
+  word-spacing: -0.5px;
+}
+
 /* Footer */
 
 .footer {
@@ -163,15 +174,7 @@ main {
   padding: 0;
 }
 .postlist__item {
-  counter-increment: start-from -1;
   margin-bottom: 1rem;
-}
-.postlist__date,
-.postlist__item:before {
-  color: var(--darkgrey);
-}
-.postlist__date {
-  word-spacing: -0.5px;
 }
 .postlist__link {
   display: inline-block;
