@@ -211,7 +211,7 @@ a tt, a code, a kbd, a samp {
   background-color: var(--accent);
   border-bottom: 0.25rem solid var(--accentdark);
   padding: 2rem;
-  margin: 0 -2rem 3rem -2rem;
+  margin: 3rem -2rem;
 }
 
 /* Posts list */
