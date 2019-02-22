@@ -43,6 +43,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [ARIA: button role](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/button_role) – MDN web docs
 - [JavaScript used to trigger button click event when the spacebar is pressed](https://github.com/alphagov/govuk-frontend/blob/e81a0fd1df51466edfb59976596da4a5179fda9c/src/components/button/button.js) – GOV.UK Frontend
 - [Contribution to add `draggable="false"` to buttons in response to user research](https://github.com/alphagov/govuk-frontend/pull/1020) – Chris Hill-Scott, GOV.UK Frontend, October 2018
+- [Button](https://design-system.service.gov.uk/components/button/) – GOV.UK Design System
 
 ### Clear and consistent focus states
 
@@ -77,6 +78,8 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [Making radio buttons and checkboxes easier to use](https://gdstechnology.blog.gov.uk/2015/08/27/making-radio-buttons-and-checkboxes-easier-to-use/) – Robin Whittleton, technology in government blog, August 2015
 - [Discussion about GOV.UK Verify style radios and checkboxes](https://github.com/alphagov/govuk_elements/pull/194) – Gemma Leigh, March 2016
 - [Pull request to add custom radios / checkboxes to GOV.UK Elements](https://github.com/alphagov/govuk_elements/pull/296) – Robin Whittleton, August 2016
+- [Checkboxes](https://design-system.service.gov.uk/components/checkboxes/) – GOV.UK Design System
+- [Radios](https://design-system.service.gov.uk/components/radios/) – GOV.UK Design System
 
 ## 3. Previous licence details
 
@@ -107,6 +110,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 
 - [No semantics to distinguish labels, hint texts and error messages](https://github.com/alphagov/govuk_elements/issues/574) – GitHub issue on GOV.UK Elements, November 2017
 - [Pull request to move the error message out of the label legend, and associate using `aria-describedby`](https://github.com/alphagov/govuk-frontend/pull/681) – Alex Jurubita, May 2018
+- [Error message](https://design-system.service.gov.uk/components/error-message/) – GOV.UK Design System
 
 ## 4. What is your most impressive juggling trick?
 
@@ -119,21 +123,22 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 
 ### Providing feedback using a character count
 
-- [Character count](https://design-system.service.gov.uk/components/character-count/) – GOV.UK Design System
 - [Building Accessible Components and the GOV.UK Design System](https://youtu.be/wprWuTvhec4) –  Alice Noakes, Ed Horsford & Alex Jurubita, London Accessibility Meetup #13, April 2018
 - [Character count prototype](https://github.com/alphagov/ds-character-count)
 - [Pull request to add character count component](https://github.com/alphagov/govuk-frontend/pull/959) – Alex Jurubita, August 2018
+- [Character count](https://design-system.service.gov.uk/components/character-count/) – GOV.UK Design System
 
 ## 5. Check your answers
 
-- [Help users to check answers](https://design-system.service.gov.uk/patterns/check-answers/)– GOV.UK Design System
 - [Pull request to add the summary list component](https://github.com/alphagov/govuk-frontend/pull/1065) – Dave House & Nick Colley, November 2018
 - [Pull request to add 'check your answers' page to the Prototype Kit](https://github.com/alphagov/govuk-prototype-kit/pull/36) – Rebecca Cottrell, October 2015
+- [Help users to check answers](https://design-system.service.gov.uk/patterns/check-answers/)– GOV.UK Design System
 
 ## 6. Confirmation page
 
 - [Pull request with fixes for components with overriden colours](https://github.com/alphagov/govuk-frontend/pull/377) – Oliver Byford, December 2017
 - [Supporting users who change colours on GOV.UK](https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/) – Nick Colley, accessibility in government blog, August 2018
+- [Confirmation pages](https://design-system.service.gov.uk/patterns/confirmation-pages/) – GOV.UK Design System
 
 ## General links
 
