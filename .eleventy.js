@@ -48,6 +48,7 @@ module.exports = function(config) {
     .use(require('markdown-it-attrs'))
     .use(require('markdown-it-abbr'))
     .use(require('markdown-it-footnote'))
+    .use(require('markdown-it-table-of-contents'))
 
   config.setLibrary("md", markdown)
 
