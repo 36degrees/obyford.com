@@ -35,7 +35,7 @@ module.exports = function(config) {
 
   const markdownOptions = {
     html: true,
-    linkify: true,
+    linkify: false,
     typographer: true
   }
 
@@ -46,6 +46,8 @@ module.exports = function(config) {
       permalinkSymbol: "#"
     })
     .use(require('markdown-it-attrs'))
+    .use(require('markdown-it-abbr'))
+    .use(require('markdown-it-footnote'))
 
   config.setLibrary("md", markdown)
 
