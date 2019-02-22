@@ -1,6 +1,6 @@
 ---
 title: "Inclusive forms: Anatomy of a (fictional) GOV.UK service"
-description: I thought it was time I started blogging again.
+description: References for my talk on inclusive forms on GOV.UK at the London Accessibility meetup.
 date: 2019-02-22
 ---
 
