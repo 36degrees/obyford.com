@@ -14,6 +14,8 @@ In putting it together I found myself pulling together information from _loads_ 
 
 This is an attempt to link out to all of those things, for anyone that wants to find out more.
 
+Have I missed something out here? Feel free to [edit this post on GitHub and raise a pull request](https://github.com/36degrees/obyford.com/blob/master/posts/inclusive-forms.md).
+
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 50px 0; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/HJshEsMH_tg?start=244' frameborder='0' allowfullscreen></iframe></div>
 
 [[toc]]
