@@ -60,6 +60,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [Accessibility and me: Marian Foley](https://accessibility.blog.gov.uk/2016/05/26/accessibility-and-me-marian-foley/) – Marian Foley, accessibility in government blog, May 2016
 - [How users change colours on websites](https://accessibility.blog.gov.uk/2017/03/27/how-users-change-colours-on-websites/) – Anika Henke, accessibility in government blog, March 2017
 - [Supporting users who change colours on GOV.UK](https://accessibility.blog.gov.uk/2018/08/01/supporting-users-who-change-colours-on-gov-uk/) – Nick Colley, accessibility in government blog, August 2018
+- [Sass mixin to create arrows using both border triangles and clip-path](https://github.com/alphagov/govuk-frontend/blob/68bd09bb3e54b7ef4b4084ad2b3336858923a041/src/helpers/_shape-arrow.scss) – GOV.UK Frontend
 - [clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path) – MDN web docs
 - [Investigate customised colours in IE11 / Edge](https://github.com/alphagov/govuk-frontend/issues/937) – GitHub issue on GOV.UK Frontend, August 2018
 
@@ -105,6 +106,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [Results of testing different options with assistive technologies](https://36degrees.github.io/linking-to-form-inputs/results/) ([test case](https://36degrees.github.io/linking-to-form-inputs/))
 - [Pull request to add guidance on linking from the error summary](https://github.com/alphagov/govuk-design-system/pull/634) – Oliver Byford, November 2018
 - [Pull request to scroll to the label or legend when linked from the error summary](https://github.com/alphagov/govuk-frontend/pull/1056) – Oliver Byford, November 2018
+- [JavaScript used to focus the error summary and scroll to the label or legend](https://github.com/alphagov/govuk-frontend/blob/68bd09bb3e54b7ef4b4084ad2b3336858923a041/src/components/error-summary/error-summary.js) – GOV.UK Frontend
 
 ### Associating the error message with the input
 
