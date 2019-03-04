@@ -31,6 +31,8 @@ module.exports = function(config) {
   config.addPassthroughCopy("img")
   config.addPassthroughCopy("css")
 
+  config.addPassthroughCopy("_redirects");
+
   /* Markdown */
 
   const markdownOptions = {
