@@ -150,5 +150,9 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [GitHub: GOV.UK Design System repository](https://github.com/alphagov/govuk-design-system)
 - [GitHub: Community backlog](https://github.com/alphagov/govuk-design-system-backlog)
 
+## Corrections
+
+- 'Register as a childminder' is built by Ofsted, not the Department for Education.
+
 
 *[WCAG]: Web Content Accessibility Guidelines
