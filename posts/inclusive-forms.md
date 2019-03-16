@@ -91,6 +91,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 ### Asking for dates
 
 - [Asking for a date of birth](https://designnotes.blog.gov.uk/2013/12/05/asking-for-a-date-of-birth/) – Joe Lanman, design in government blog, December 2013)
+- [Burn your select tags (Video)](https://www.youtube.com/watch?v=CUkMCQR4TpY) – Alice Bartlett, EpicFEL 2014
 - [Ask users for dates](https://design-system.service.gov.uk/patterns/dates/) – GOV.UK Design System
 
 ### Helping users understand when there is a problem
@@ -125,7 +126,7 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 
 ### Providing feedback using a character count
 
-- [Building Accessible Components and the GOV.UK Design System](https://youtu.be/wprWuTvhec4) –  Alice Noakes, Ed Horsford & Alex Jurubita, London Accessibility Meetup #13, April 2018
+- [Building Accessible Components and the GOV.UK Design System (Video)](https://youtu.be/wprWuTvhec4) –  Alice Noakes, Ed Horsford & Alex Jurubita, London Accessibility Meetup #13, April 2018
 - [Character count prototype](https://github.com/alphagov/ds-character-count)
 - [Pull request to add character count component](https://github.com/alphagov/govuk-frontend/pull/959) – Alex Jurubita, August 2018
 - [Character count](https://design-system.service.gov.uk/components/character-count/) – GOV.UK Design System
