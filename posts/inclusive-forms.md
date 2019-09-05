@@ -14,6 +14,8 @@ In putting it together I found myself pulling together information from _loads_ 
 
 This is an attempt to link out to all of those things, for anyone that wants to find out more.
 
+**Update:** I gave this talk again at [MK Geek Night on 5 September 2019](https://mkgeeknight.co.uk/events/mkgn-30/), as 'Government services that work for everyone'. This version of the talk has been updated slightly to include new changes since February, and to adapt it for a more general audience. I've tried to document [what was changed](#changes-made-for-‘government-services-that-work-for-everyone’).
+
 Have I missed something out here? Feel free to [edit this post on GitHub and raise a pull request](https://github.com/36degrees/obyford.com/blob/master/posts/inclusive-forms.md).
 
 <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 50px 0; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/JHaLzm-FGsc' frameborder='0' allowfullscreen></iframe></div>
@@ -51,6 +53,20 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [Understanding Success Criterion 1.4.11: Non-text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast) – Understanding WCAG 2.1
 - [GOV.UK's current focus state](https://contrast-checker.glitch.me/?textColour=%230b0c0c&objectBackground=%23ffbf47&pageBackground=%23FFFFFF) –  checked using Nick Colley's contrast checker app
 - [Investigate colour contrast issues with the focus state](https://github.com/alphagov/govuk-frontend/issues/1137) – GitHub issue on GOV.UK Frontend, January 2019
+
+**Update:** Since September 2019:
+
+- [Closed pull request with a design spike into the new focus states](https://github.com/alphagov/govuk-frontend/pull/1245) – Dave House, March 2019
+- Pull requests to update the focus state for 
+    [links](https://github.com/alphagov/govuk-frontend/pull/1309),
+    [form inputs](https://github.com/alphagov/govuk-frontend/pull/1312),
+    [radios and checkboxes](https://github.com/alphagov/govuk-frontend/pull/1316),
+    [buttons](https://github.com/alphagov/govuk-frontend/pull/1315),
+    [tabs](https://github.com/alphagov/govuk-frontend/pull/1326),
+    [accordions](https://github.com/alphagov/govuk-frontend/pull/1324),
+    and the [footer](https://github.com/alphagov/govuk-frontend/pull/1321)
+    – Oliver Byford, Hanna Laakso, Nick Colley & Alistair Laing, April - May 2019
+- [We’ve made the GOV.UK Design System more accessible](https://designnotes.blog.gov.uk/2019/07/29/weve-made-the-gov-uk-design-system-more-accessible/) - Amy Hupe and Dave House, design in government blog, July 2019
 
 ## 2. Have you held a juggling licence before?
 
@@ -115,6 +131,10 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [Pull request to move the error message out of the label legend, and associate using `aria-describedby`](https://github.com/alphagov/govuk-frontend/pull/681) – Alex Jurubita, May 2018
 - [Error message](https://design-system.service.gov.uk/components/error-message/) – GOV.UK Design System
 
+**Update:** Since September 2019:
+
+- [Pull request to add hidden "Error:" prefix to error messages](https://github.com/alphagov/govuk-frontend/pull/1221) – Oliver Byford, February 2019
+
 ## 4. What is your most impressive juggling trick?
 
 ### Making a legend a label
@@ -151,9 +171,21 @@ Have I missed something out here? Feel free to [edit this post on GitHub and rai
 - [GitHub: GOV.UK Design System repository](https://github.com/alphagov/govuk-design-system)
 - [GitHub: Community backlog](https://github.com/alphagov/govuk-design-system-backlog)
 
-## Corrections
+## Corrections & changes
 
 - 'Register as a childminder' is built by Ofsted, not the Department for Education.
+
+### Changes made for 'government services that work for everyone'
+
+For the talk at MK Geek Night in September 2019:
+
+- The title of the talk was changed, and some additional introduction content added.
+- The [section on focus states](#clear-and-consistent-focus-states) was updated to include information about changes that we've made (the previous talk explained the problem, but at that point we did not have a solution)
+- (Nearly) all of the screenshots were updated to use the new colour palette and focus states
+- Some of the more technical detail was removed
+- Details about the WCAG 2.1 1.4.11 'Non-text contrast' criteria were removed – I now just mention that the old focus state meant that we 'were not meeting new accessibility guidelines'
+- The [section on error messages](#associating-the-error-message-with-the-input) was updated to talk about the visually hidden 'Error' prefix
+- A slide was added to try and better credit all of the brilliant individuals who have done so much of the work
 
 
 *[WCAG]: Web Content Accessibility Guidelines
