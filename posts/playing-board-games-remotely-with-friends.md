@@ -96,6 +96,8 @@ It generally seemed to work well, and Emma and Chris enjoyed it despite being re
 
 We won, and even managed to eradicate one of the diseases along the way – but with only three cards left to draw. A close one!
 
+If you try this for yourself, do [let me know](https://twitter.com/36degrees) – especially if you find other games that work well!
+
 
 [^1]: 'Fun' fact: we only bought this tripod a few weeks ago, for a trip to Tromsø we were meant to have gone on this week. At least we got some use out of it!
 [^2]: When opening Camera Live for the first time, macOS may prevent you from running it as it's not trusted. You can work around this by right-clicking and choosing 'Open', but note that this is macOS trying to protect you from untrusted software, and you're choosing to bypass that protection.
