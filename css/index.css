@@ -148,9 +148,9 @@ main {
 
 .prose img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin: 1.5rem 0;
+  margin: 1.5rem auto;
 }
 
 .img--border {
@@ -260,4 +260,14 @@ a tt, a code, a kbd, a samp {
 
 .table-of-contents li:last-child {
   margin-bottom: 0;
+}
+
+.footnotes-sep {
+  height: 0;
+  margin: 60px 0 40px;
+  border-top: 1px solid var(--darkgrey);
+}
+
+.footnote-item {
+  color: var(--darkgrey);
 }
