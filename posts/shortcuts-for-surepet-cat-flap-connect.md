@@ -1,7 +1,7 @@
 ---
 title: Shortcuts for SurePet Connected Cat/Pet Flaps
 description: iOS Shortcuts you can use to control a SurePet Cat Flap Connect or Pet Flap Connect with Siri.
-date: 2020-05-01
+date: 2020-05-07
 ---
 
 These iOS [Shortcuts] allow you to control a SureFlap [Cat Flap Connect] or [Pet Flap Connect] using Siri. You can use them to:
