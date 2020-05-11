@@ -170,6 +170,15 @@ a tt, a code, a kbd, a samp {
   color: inherit;
 }
 
+/* Horizontal Rules */
+
+.prose hr {
+  border: 0;
+  height: 1px;
+  background: var(--lightgrey);
+  margin: 2rem 0;
+}
+
 /* Dates */
 .date {
   color: var(--darkgrey);
