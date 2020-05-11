@@ -3,6 +3,7 @@ const fs = require("fs")
 
 module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-rss"))
+  config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"))
   config.setDataDeepMerge(true)
 
   config.addLayoutAlias("base", "layouts/base.njk")
