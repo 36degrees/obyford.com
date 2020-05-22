@@ -8,7 +8,7 @@ In an effort to stay sane whilst practising [social distancing](https://www.gov.
 
 I thought it was worth sharing how we did it.{.paragraph--lead}
 
-It's very specific to the equipment that we have available to us (a Canon DSLR, and a Mac) but I hope it be be a useful starting point.
+It's very specific to the equipment that we have available to us (a Canon DSLR, and a Mac) but I hope it's a useful starting point.
 
 [[toc]]
 
