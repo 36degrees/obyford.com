@@ -6,6 +6,8 @@ module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"))
   config.setDataDeepMerge(true)
 
+  config.addWatchTarget("sass/");
+
   config.addLayoutAlias("base", "layouts/base.njk")
   config.addLayoutAlias("post", "layouts/post.njk")
 

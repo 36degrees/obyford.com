@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "DEBUG=* eleventy"
+  command = "npm run build"
   environment = { FATHOM_SITE_ID = "HGDZCOSY" }
 
 [context.production]
