@@ -127,6 +127,7 @@ main {
 .prose a[href]:focus {
   background-color: $black;
   outline: 5px solid $black;
+  outline-offset: 0;
   color: $inverse-text-color;
   text-decoration-color: inherit;
 }
