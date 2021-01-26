@@ -1,17 +1,20 @@
-:root {
-  --accent: #BB4430;
-  --accentdark: #772b1f;
-  --accentlight: #dc8475;
+$accent: #BB4430;
+$accentdark: #772b1f;
+$accentlight: #dc8475;
+$lightgrey: #E8E4E1;
+$darkgrey: #5B5A5B;
+$white: #FFFBF7;
+$black: #231F20;
 
-  --lightgrey: #E8E4E1;
-  --darkgrey: #5B5A5B;
+$page-background-color: $white;
+$page-overscroll-color: $accentdark;
 
-  --selection: #feeabf;
-  --white: #FFFBF7;
-  --black: #231F20;
+$text-color: $black;
+$muted-text-color: $darkgrey;
+$inverse-text-color: $white;
 
-  --code: #266C70;
-}
+$selection: #FEEABF;
+$code: #266C70;
 
 * {
   box-sizing: border-box;
@@ -22,17 +25,17 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  color: var(--black);
-  background-color: var(--white);
+  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
 html {
-  background: var(--accentdark);
-  border-top: 0.5rem solid var(--accent);
+  background: $page-overscroll-color;
+  border-top: 0.5rem solid $accent;
 }
 
 body {
+  background-color: $page-background-color;
   min-height: 100vh;
 }
 
@@ -46,8 +49,8 @@ main {
 }
 
 ::selection {
-  background-color: var(--selection);
-  color: var(--black);
+  background-color: $selection;
+  color: $black;
 }
 
 .nav {
@@ -70,7 +73,7 @@ main {
 
 .paragraph--inverse,
 .heading--inverse {
-  color: var(--white);
+  color: $inverse-text-color;
 }
 
 .prose * + * {
@@ -107,42 +110,42 @@ main {
 .link:visited,
 .prose a[href]:link,
 .prose a[href]:visited {
-  color: var(--accent);
-  text-decoration-color: var(--accentlight);
+  color: $accent;
+  text-decoration-color: $accentlight;
 }
 
 .link:hover,
 .link:active,
 .prose a[href]:hover,
 .prose a[href]:active {
-  color: var(--accentdark);
+  color: $accentdark;
   text-decoration-color: inherit;
   text-decoration-thickness: min(2px, 0.1em);
 }
 
 .link:focus,
 .prose a[href]:focus {
-  background-color: var(--black);
-  outline: 5px solid var(--black);
-  color: var(--white);
+  background-color: $black;
+  outline: 5px solid $black;
+  color: $inverse-text-color;
   text-decoration-color: inherit;
 }
 
 .link--muted:link,
 .link--muted:visited {
-  color: var(--darkgrey);
+  color: $muted-text-color;
   text-decoration-color: inherit;
 }
 
 .link--muted:focus {
-  color: var(--white);
+  color: $inverse-text-color;
 }
 
 .link--inverse:link,
 .link--inverse:visited,
 .link--inverse:hover,
 .link--inverse:active {
-  color: var(--white);
+  color: $inverse-text-color;
 }
 
 /* Images */
@@ -155,14 +158,14 @@ main {
 }
 
 .img--border {
-  border: 1px solid var(--lightgrey);
+  border: 1px solid $lightgrey;
   box-shadow: 1px 0px 3px rgba(35, 31, 32, 0.1);
 }
 
 /* Code */
 
 tt, code, kbd, samp {
-  color: var(--code);
+  color: $code;
   font-size: 1em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
@@ -176,13 +179,13 @@ a tt, a code, a kbd, a samp {
 .prose hr {
   border: 0;
   height: 1px;
-  background: var(--lightgrey);
+  background: $lightgrey;
   margin: 2rem 0;
 }
 
 /* Dates */
 .date {
-  color: var(--darkgrey);
+  color: $muted-text-color;
   word-spacing: -0.5px;
 }
 
@@ -191,7 +194,7 @@ a tt, a code, a kbd, a samp {
 .footer {
   padding: 2rem;
   margin-top: 1rem;
-  border-top: 1px solid var(--lightgrey);
+  border-top: 1px solid $lightgrey;
 }
 
 .footer__list {
@@ -212,14 +215,14 @@ a tt, a code, a kbd, a samp {
 
 .footer__link:link,
 .footer__link:visited {
-  color: var(--darkgrey);
+  color: $muted-text-color;
 }
 
 /* Hero */
 
 .hero {
-  background-color: var(--accent);
-  border-bottom: 0.25rem solid var(--accentdark);
+  background-color: $accent;
+  border-bottom: 0.25rem solid $accentdark;
   padding: 2rem;
   margin: 3rem -2rem;
 }
@@ -254,11 +257,11 @@ a tt, a code, a kbd, a samp {
 .prose a[href].direct-link:focus:visited,
 .prose :hover > a[href].direct-link,
 .prose :hover > a[href].direct-link:visited {
-  color: var(--accent);
+  color: $accent;
 }
 
 .table-of-contents {
-  border: 1px solid var(--accent);
+  border: 1px solid $accent;
   padding: 1.5em;
 }
 
@@ -275,9 +278,9 @@ a tt, a code, a kbd, a samp {
 .footnotes-sep {
   height: 0;
   margin: 60px 0 40px;
-  border-top: 1px solid var(--darkgrey);
+  border-top: 1px solid $muted-text-color;
 }
 
 .footnote-item {
-  color: var(--darkgrey);
+  color: $muted-text-color;
 }
