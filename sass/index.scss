@@ -120,7 +120,7 @@ main {
 .prose a[href]:active {
   color: $accentdark;
   text-decoration-color: inherit;
-  text-decoration-thickness: min(2px, 0.1em);
+  text-decoration-thickness: min(2px, 0.15em);
 }
 
 .link:focus,
@@ -147,6 +147,12 @@ main {
 .link--inverse:hover,
 .link--inverse:active {
   color: $inverse-text-color;
+  text-decoration-color: rgba($inverse-text-color, .7);
+}
+
+.link--inverse:hover,
+.link--inverse:active {
+  text-decoration-color: inherit;
 }
 
 /* Images */
