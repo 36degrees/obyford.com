@@ -16,6 +16,6 @@ layout: base
 {% set postslist = collections.posts | head(-5) %}
 {% include "postslist.njk" %}
 
-{% if collection.posts.length > 5 %}
+{% if collections.posts.length > 5 %}
 <p class="paragraph"><a class="link link--muted" href="{{ '/posts/' | url }}">Older posts <span aria-hidden="true">→</span></a></p>
 {% endif %}
