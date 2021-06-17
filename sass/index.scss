@@ -195,9 +195,13 @@ main {
 
 /* Code */
 
+pre {
+  font-size: 20px;
+}
+
 tt, code, kbd, samp {
   color: $code;
-  font-size: 1em;
+  font-size: 0.9em;
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
