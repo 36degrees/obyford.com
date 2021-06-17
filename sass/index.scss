@@ -115,6 +115,17 @@ main {
 
 /* Links */
 
+.link,
+.prose a[href],
+.footer__link {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1em;
+
+  &:hover {
+    text-decoration-thickness: min(3px, 0.15em);
+  }
+}
+
 .link:link,
 .link:visited,
 .prose a[href]:link,
@@ -129,7 +140,6 @@ main {
 .prose a[href]:active {
   color: $accentdark;
   text-decoration-color: inherit;
-  text-decoration-thickness: min(2px, 0.15em);
 }
 
 .link:focus,
@@ -145,6 +155,11 @@ main {
 .link--muted:visited {
   color: $muted-text-color;
   text-decoration-color: inherit;
+}
+
+.link--muted:hover,
+.link--muted:active {
+  color: $text-color;
 }
 
 .link--muted:focus {
@@ -229,9 +244,8 @@ a tt, a code, a kbd, a samp {
   margin-left: 1rem;
 }
 
-.footer__link:link,
-.footer__link:visited {
-  color: $muted-text-color;
+.footer__link {
+  @extend .link--muted;
 }
 
 /* Hero */
