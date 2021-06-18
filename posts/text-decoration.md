@@ -209,8 +209,9 @@ One option is to set the `text-decoration-line` longhand property directly, like
 ```scss
 .link {
     text-decoration: underline;
-    text-decoration-thickness: 10px;
-    text-decoration-color: red;
+    text-decoration-color: navy;
+    text-decoration-thickness: 4px;
+    text-decoration-style: dotted;
 }
 
 .link--no-underline:link,
