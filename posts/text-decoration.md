@@ -4,7 +4,7 @@ description:
 date: 2021-07-07
 ---
 
-I recently had a lot of fun working on [some changes to the link styles on GOV.UK](#). Here's everything I learned about text decoration in the process.{.paragraph--lead}
+I recently had a lot of fun working on [some changes to the link styles on GOV.UK](https://designnotes.blog.gov.uk/2021/07/07/making-links-easier-to-see-and-read-on-gov-uk/). Here's everything I learned about text decoration in the process.{.paragraph--lead}
 
 ![Screenshot showing the link styles before and after](/img/text-decoration/links-before-after.png){.img--border}
 
