@@ -1,7 +1,7 @@
 ---
 title: Everything you ever wanted to know about text decoration…
 description: 
-date: 2021-06-17
+date: 2021-07-07
 ---
 
 I recently had a lot of fun working on [some changes to the link styles on GOV.UK](#). Here's everything I learned about text decoration in the process.{.paragraph--lead}
