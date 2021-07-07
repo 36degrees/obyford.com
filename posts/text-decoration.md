@@ -14,7 +14,7 @@ We made two subtle but important changes to links.
 
 2. We made the hover state clearer, by thickening the underline to 3px when a user hovers over the link. 
 
-    This addresses [a usability issue originally raised in an audit]((https://github.com/alphagov/govuk-frontend/issues/1417#issue-450861994)) carried by the Digital Accessibility Centre way back in May 2019. They said:
+    This addresses [a usability issue originally raised in an audit](https://github.com/alphagov/govuk-frontend/issues/1417#issue-450861994) carried by the Digital Accessibility Centre way back in May 2019. They said:
 
     > &ldquo;The colour change when a user hovers over a link is not clear and this was especially difficult for low vision users to determine.
     > 
