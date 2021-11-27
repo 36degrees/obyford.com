@@ -60,6 +60,7 @@ module.exports = function(config) {
   /* BrowserSync */
 
   config.setBrowserSyncConfig({
+    ghostMode: false,
     callbacks: {
       ready: function(err, browserSync) {
         const content_404 = fs.readFileSync('_site/404.html')
