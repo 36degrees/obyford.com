@@ -1,7 +1,7 @@
 ---
 title: Lighting ‘Calendar Girls The Musical’ for Tring Theatre Company
 description: 
-date: 2021-11-10
+date: 2021-11-28
 ---
 
 I recently had the pleasure of working with [Tring Theatre Company] to light their amateur production of [Calendar Girls The Musical] at The Court Theatre in Tring.{.paragraph--lead}
