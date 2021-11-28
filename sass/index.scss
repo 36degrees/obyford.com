@@ -179,6 +179,24 @@ main {
   text-decoration-color: inherit;
 }
 
+// Direct Links / Markdown Headers
+.prose a[href]:link.direct-link,
+.prose a[href]:visited.direct-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.prose a[href].direct-link:hover,
+.prose a[href].direct-link:active {
+  color: $accentdark;
+  text-decoration: underline;
+}
+
+.prose a[href].direct-link:focus {
+  color: $inverse-text-color;
+  text-decoration: underline;
+}
+
 /* Images */
 
 .prose img {
@@ -282,24 +300,6 @@ a tt, a code, a kbd, a samp {
   display: inline-block;
   font-size: 1.25rem;
   margin-right: 0.5rem;
-}
-
-/* Direct Links / Markdown Headers */
-.direct-link {
-  font-family: sans-serif;
-  text-decoration: none;
-  font-style: normal;
-  margin-left: .1em;
-}
-.prose a[href].direct-link,
-.prose a[href].direct-link:visited {
-  color: transparent;
-}
-.prose a[href].direct-link:focus,
-.prose a[href].direct-link:focus:visited,
-.prose :hover > a[href].direct-link,
-.prose :hover > a[href].direct-link:visited {
-  color: $accent;
 }
 
 .table-of-contents {

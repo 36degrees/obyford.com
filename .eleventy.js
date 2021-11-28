@@ -1,6 +1,7 @@
 const { DateTime } = require("luxon")
 const fs = require("fs")
 const leeFilters = require('./_data/leeFilters.json')
+const anchor = require("markdown-it-anchor")
 
 module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-rss"))
@@ -53,10 +54,11 @@ module.exports = function(config) {
   }
 
   const markdown = require("markdown-it")(markdownOptions)
-    .use(require("markdown-it-anchor"), {
-      permalink: true,
-      permalinkClass: "direct-link",
-      permalinkSymbol: "#"
+    .use(anchor, {
+      permalink: anchor.permalink.headerLink({
+        class: 'direct-link'
+      }),
+      tabIndex: false
     })
     .use(require('markdown-it-attrs'))
     .use(require('markdown-it-abbr'))
