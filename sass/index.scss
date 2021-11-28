@@ -224,6 +224,14 @@ a tt, a code, a kbd, a samp {
   word-spacing: -0.5px;
 }
 
+.prose figcaption {
+  color: $muted-text-color;
+  text-align: center;
+  margin-top: -1rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
 /* Footer */
 
 .footer {
@@ -317,4 +325,20 @@ a tt, a code, a kbd, a samp {
 
 .footnote-item {
   color: $muted-text-color;
+}
+
+.script-character {
+  text-align: center;
+  font-weight: bold;
+  color: $muted-text-color;
+}
+
+.swatch {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 0.75em;
+  height: 0.75em;
+  border: 1px solid $muted-text-color;
+  margin: 0;
+  border-radius: 1px;
 }

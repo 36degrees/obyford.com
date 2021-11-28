@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon")
 const fs = require("fs")
+const leeFilters = require('./_data/leeFilters.json')
 
 module.exports = function(config) {
   config.addPlugin(require("@11ty/eleventy-plugin-rss"))
@@ -10,6 +11,13 @@ module.exports = function(config) {
 
   config.addLayoutAlias("base", "layouts/base.njk")
   config.addLayoutAlias("post", "layouts/post.njk")
+
+  /* Shortcodes */
+  config.addShortcode('lee', filterId => {
+    if (leeFilters.hasOwnProperty(filterId)) {
+      return `${leeFilters[filterId].name} (<span class="swatch" style="background-color: ${leeFilters[filterId].hex}"></span> L${filterId})`
+    }
+  })
 
   /* Filters */
 
@@ -60,6 +68,7 @@ module.exports = function(config) {
   /* BrowserSync */
 
   config.setBrowserSyncConfig({
+    ghostMode: false,
     callbacks: {
       ready: function(err, browserSync) {
         const content_404 = fs.readFileSync('_site/404.html')
