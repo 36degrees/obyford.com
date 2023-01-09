@@ -22,7 +22,7 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-rss": "^1.1.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "luxon": "^2.1.1",
+    "luxon": "^2.5.2",
     "markdown-it": "^12.3.2",
     "markdown-it-anchor": "^8.4.1"
   },
